@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Section 2! Intro to forms</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+    <!-- This tag will make our form perty -->
+    <!-- It kind of wraps our form in a box -->
+    <fieldset>
+        <!-- This will be the title shown at the top of the box -->
+        <legend>HTML5 Form</legend>
+        <!-- Defining a form and what's inside of it -->
+        <!-- The action variable is where you put the address of the server where the form will be submitted -->
+        <!-- The method variable does -->
+        <form action="" method="GET">
+            <!-- Defining user input -->
+            <!-- placeholder will be what's displayed in the text boxes before they click on it -->
+            <label for="userName">User Name:</label> <input id="userName" type="text" name="userName" placeholder="Enter your User Name">
+            <!-- value tag will just throw a value into the text box by default that can be submitted -->
+            <label for="userName">Name:</label> <input id="userName" type="text" name="userName" value="Enter your User Name">
+            <!-- This creates a text box where the the text is hidden like inputting a password -->
+            <label for="password">Password:</label> <input id="password" type="password" name="password" placeholder="Enter your Password">
+            <!-- submit type is a Submit button -->
+            <input type="submit" value="Submit this form">
+            <!-- reset type is a Reset button to reset the whole form -->
+            <input type="reset" value="Reset this form">
+        </form>
+    </fieldset>
+</body>
+</html>

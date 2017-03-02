@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Section 2! Intro to Radio buttons, check boxes, lists, and text area!</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+    <fieldset>
+        <form action="" method="POST">
+            <legend>Select Your Mode</legend>
+             <!--radio type for a radio button -->
+             <!--We define two with the same name for both on and off modes -->
+             <!--So, you can't have both clicked at the same time -->
+            <label for="on">ON:</label> <input id="on" type="radio" name="onoff" value="on">
+            <label for="off">OFF:</label> <input id="off" type="radio" name="onoff" value="off">
+             <!--Since the name of this is different you can click it at the same time as the above buttons -->
+            <label for="auto">AUTO:</label> <input id="auto" type="radio" name="auto" value="off">
+
+            <legend>Select Your Account</legend>
+             <!--Definition checkboxes -->
+            <label for="checkBox">GMAIL:</label> <input id="checkBox" type="checkbox" name="gmail" value="yes">
+            <label for="micro">MICROSOFT:</label> <input id="micro" type="checkbox" name="microsoft" value="yes">
+            <label for="msn">MSN:</label> <input id="msn" type="checkbox" name="msn" value="yes">
+
+             <!--br will create a line break for us -->
+            <br> <legend>Select Your Country</legend>
+             <!--Selection area aka dropdown-->
+            <select name="country">
+                <option value="usa">USA</option>
+                <option value="ca">CANADA</option>
+                <option value="pak">PAKISTAN</option>
+                <option value="ind">INDIA</option>
+            </select>
+
+            <br> <legend>Write Your Message</legend>
+             <!--Text area some empty space you can type a message -->
+            <textarea name="yourMessage"></textarea>
+
+            <br> <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+</body>
+</html>
