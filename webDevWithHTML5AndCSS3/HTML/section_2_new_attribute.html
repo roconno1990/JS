@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Section 2! HTML5 New Attribute!</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+    <fieldset>
+        <form action="" method="get">
+            <legend>HTML5 new Attribute</legend>
+            <!-- This autofocus thing will automatically select this text box when the page starts -->
+            <!-- The required thing will not allow submitting an empty field -->
+            <label for="name">Name:</label><input id="name" type="text" name="name" autofocus required>
+            <br>
+            <!-- The checked thing will start the page with YES radio button checked -->
+            <label for="yes">YES:</label> <input id="yes" type="radio" name="radio" value="yes" checked>
+            <!-- Last one with checked defined wins! -->
+            <label for="no">NO:</label> <input id="no" type="radio" name="radio" value="no">
+            <br>
+            <label for="on">ON:</label> <input id="on" type="checkbox" name="check" value="on">
+            <label for="off">OFF:</label> <input id="off" type="checkbox" name="check" value="off" checked>
+            <br>
+            <!--<label for="email">Email Us:</label> <input id="email" type="email" name="email"/>-->
+            <!-- To use a pattern we need to make it a text type -->
+            <!-- Pattern is defining accepted values in regexp! -->
+            <!-- title is like an error text -->
+            <!-- This particular regex means: any lower/upper case letter atleast 3 times followed by an @ then the same criteria folled by a . atleast once, then blahblah atleast twice -->
+            <label for="email">Email Us:</label> <input id="email" type="email" name="email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title= "Please enter valid email address!">
+            <br>
+            <label for="phone">Phone:</label> <input id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter like this: ###-###-####">
+            <br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </fieldset>
+</body>
+</html>
