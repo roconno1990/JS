@@ -11,8 +11,13 @@
 </head>
 
 <body>
-    <!-- Meter element -->
+    <!-- Meter element. This shows a bar on the screen filled halfway -->
     <!-- This element is not support in all browsers -->
-    <meter min="0" max="100" value="50">Your browser does not support meter element1</meter>
+    <meter min="0" max="100" value="50">Your browser does not support meter element!</meter>
+
+    <!-- Similar to meter element, but shows in a different bar and I think 0 is the default min -->
+    <!-- However, still shows a visual bar that shows 70/100 -->
+    <!-- Like meter this is not always supported in other browers which is the purpose of the message -->
+    <progress value="70" max="100">Your browser does not support progress element!</progress>
 </body>
 </html>

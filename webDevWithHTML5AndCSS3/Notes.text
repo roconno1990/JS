@@ -24,3 +24,7 @@ Notes on POST:
 - Has no size limitations
 - Form submissions with POST cannot be bookmarked
 --------------------------------------------------------------------------------
+Frame Stuff:
+
+You can actually get an HTML iframe tag if you go to youtube and choose to grab
+the embedded version. Which you can then stick into your HTML.
