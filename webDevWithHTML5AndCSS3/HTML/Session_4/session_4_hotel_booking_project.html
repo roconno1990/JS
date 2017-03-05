@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Section 4! Hotel Booking Form Project</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+    <fieldset>
+        <legend>Personel Details</legend>
+        <form action="submit.html" method="get">
+            <label for="userName">User Name:</label> <input id="userName" type="text" name="userName" placeholder="Enter your User Name">
+             <!-- Email type complains if the input value doesn't have an @ -->
+            <label for="email">Email Us:</label> <input id="email" type="email" name="email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title= "Please enter valid email address!" placeholder="Please enter your email.">
+            <!-- Telephone number type -->
+            <label for="phone">Phone:</label> <input id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter like this: ###-###-####">
+             <!--Selection area aka dropdown-->
+            <select name="country">
+                <option value="usa">USA</option>
+                <option value="ca">CANADA</option>
+                <option value="pak">PAKISTAN</option>
+                <option value="ind">INDIA</option>
+            </select>
+            <br><br>
+            <label for="date">Select Your Arrival Date:</label> <input id="date" type="date" name="date" min="2016-12-06">
+            <label for="number">Number of Guests:</label> <input id="number" type="number" name="number" min="0" max="15">
+            <p><strong><em>Do you Require Meals:</em></strong></p>
+            <label for="on">Yes</label> <input id="on" type="radio" name="yesorno" value="yes">
+            <label for="off">No</label> <input id="off" type="radio" name="yesorno" value="no">
+            <p><strong><em>Do you Require a Balcony:</em></strong></p>
+            <label for="balcony">Yes</label> <input id="balcony" type="checkbox" name="balcony" value="yes">
+            <br>
+            <input type="image" src="images/button.png" alt="submit">
+        </form>
+    </fieldset>
+</body>
+</html>
