@@ -1,0 +1,14 @@
+CSS Course Work Notes
+--------------------------------------------------------------------------------
+C - Cascading
+S - Style
+S - Sheets
+
+It defines how to display HTML elements.
+Styles are normally stored in <style></style>
+
+"Rule Based Language"
+
+Styles stack on each other.
+
+Places to find HTML colors: http://htmlcolorcodes.com/

@@ -1,0 +1,100 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>CSS Session 1!</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<style type="text/css">
+    /* selector for h1 tag...this changes the h1 tags to match this */
+    h1
+    {
+        font-size: 40px;
+        color: red;
+    }
+
+    /* selector for p tag...this changes the p tags to match this...unless otherwise changed via id or class */
+    p
+    {
+        text-decoration: underline;
+        color: green;
+        font-family: pristina;
+    }
+
+    /*div*/
+    /*{*/
+    /*    background-color: yellow;*/
+    /*}*/
+
+    /* Creation of an id block. This gets applied to elements with this HTML id */
+    /*#gmail*/
+    /*{*/
+    /*    color: green;*/
+    /*    font-size: 30px;*/
+    /*}*/
+
+    /* Creation of a class block. */
+    /*.testClass*/
+    /*{*/
+    /*    color: blue;*/
+    /*    text-decoration: overline;*/
+    /*    font-size: 60px;*/
+    /*}*/
+
+    /*.anotherClass*/
+    /*{*/
+    /*    color: black;*/
+    /*    font-family: fantasy;*/
+    /*}*/
+
+    /*.yellow*/
+    /*{*/
+    /*    background-color: yellow;*/
+    /*}*/
+
+    /*.red*/
+    /*{*/
+    /*    background-color: red;*/
+    /*}*/
+
+    .colorFromWeb1
+    {
+        background-color: #FF5733;
+    }
+
+    .colorFromWeb2
+    {
+        background-color: #B538E5;
+    }
+
+    .rgbClass
+    {
+        /* rgb is a way to kind of wing it and make a color. Takes 3 parameters */
+        background-color: rgb(125, 65, 350);
+    }
+
+</style>
+
+<body>
+    <!-- As you can see from the website, the styles stack on each other -->
+
+    <div class="colorFromWeb1">
+        <h1>Google</h1>
+        <!-- Will use defaul p styler -->
+        <p>People use Google as a search engine.</p>
+    </div>
+
+    <div class="rgbClass">
+        <!-- Will use id styler with the gmail id -->
+        <p id="gmail">Gmail is my default account.</p>
+        <!-- Will use the class styler with testClass class -->
+        <!-- span tag will allow us to use different styles throughout our paragraph or w/e else -->
+        <p class="testClass">Yahoo, Gmail, <span class="anotherClass">MSN,</span> and Nothing</p>
+    </div>
+</body>
+</html>
