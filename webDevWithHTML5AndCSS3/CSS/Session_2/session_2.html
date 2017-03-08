@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>CSS Session 2!</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<style type="text/css">
+    /* selector for h1 tag...this changes the h1 tags to match this */
+    h1
+    {
+        font-size: 40px;
+        color: red;
+    }
+
+    /* selector for p tag...this changes the p tags to match this...unless otherwise changed via id or class */
+    p
+    {
+        text-decoration: underline;
+        color: green;
+        font-family: pristina;
+        font-size: 30px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .colorFromWeb1
+    {
+        background-color: #FF5733;
+        width: 350px;
+        height: 100px;
+        /* Uses 30 pixals from all sides */
+        padding: 100px;
+        /* This just seems to increase the margin by the specified pixal amount */
+        /* left, top, botton, and all that fun stuff as once! WOW */
+        /*margin: 50px 30px 100px 6px;*/
+        /*margin-left: 90px;*/
+        /*margin-bottom: 50px;*/
+        /*margin-top: 100px;*/
+        /* relative to it's normal position */
+        /*position: static;*/
+        /* move left 15 pixals this stuff is only used with relative */
+        /*left: 15px;*/
+        /* move from top 30 pixals*/
+        /*top: 30px;*/
+        /* z-index for bottom */
+        /*z-index: 1;*/
+        /* float will align them on the page. This aligns it left*/
+        /*float: left;*/
+    }
+
+    .colorFromWeb2
+    {
+        background-color: #B538E5;
+        width: 200px;
+        height: 150px;
+        /*margin-left: 300px;*/
+        /*position: relative;*/
+        /* z-index for bottom */
+        /*z-index: 2;*/
+        /* This aligns it right. */
+        /*float: right;*/
+    }
+
+    /*.break*/
+    /*{*/
+        /* This will clear the floats */
+        /* TODO: research this more */
+    /*    clear: both;*/
+    /*}*/
+
+</style>
+
+<body>
+    <div class="colorFromWeb1">People use Google as a search engine.</div>
+    <div class="colorFromWeb2">This is some more text</div>
+    <!-- This is just an empty div -->
+    <div class="break"></div>
+    <h1>Google</h1>
+    <p id="gmail">Gmail is my default account.</p>
+    <p class="testClass">Yahoo, Gmail, <span class="anotherClass">MSN,</span> and Nothing</p>
+</body>
+</html>

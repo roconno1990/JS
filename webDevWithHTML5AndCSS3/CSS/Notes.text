@@ -12,3 +12,41 @@ Styles are normally stored in <style></style>
 Styles stack on each other.
 
 Places to find HTML colors: http://htmlcolorcodes.com/
+
+positioning is used to create complicated layouts using CSS.
+- By default position is static
+Property values of position:
+static - Default value. Elements render in order, as they appear in the document flow
+absolute - The element is positioned relative to its first positioned (not static) ancestor element
+fixed - The element is positioned relative to the browser window
+relative - The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position
+initial - Sets this property to its default value. Read about initial
+inherit - Inherits this property from its parent element.
+
+z-index is used to determine who is on top and who is on botton ;)
+-- Only works for relative position ;)
+--- Greater value is on top ;)
+
+We can also do some positioning stuff with margin
+margin: top right bottom left
+can also do : margin-left and so on
+
+About Padding (from w3schools):
+The CSS padding properties are used to generate space around content.
+
+The padding clears an area around the content (inside the border) of an element.
+
+With CSS, you have full control over the padding. There are CSS properties for setting the padding for each side of an element (top, right, bottom, and left).
+
+Padding - Individual Sides
+CSS has properties for specifying the padding for each side of an element:
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+All the padding properties can have the following values:
+
+length - specifies a padding in px, pt, cm, etc.
+% - specifies a padding in % of the width of the containing element
+inherit - specifies that the padding should be inherited from the parent element
