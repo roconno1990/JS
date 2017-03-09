@@ -50,3 +50,47 @@ All the padding properties can have the following values:
 length - specifies a padding in px, pt, cm, etc.
 % - specifies a padding in % of the width of the containing element
 inherit - specifies that the padding should be inherited from the parent element
+
+Things we can use with border:
+border-style:none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;
+
+Property Values
+Value -	Description
+none - Default value. Specifies no border
+hidden - The same as "none", except in border conflict resolution for table elements
+dotted - Specifies a dotted border
+dashed - Specifies a dashed border
+solid -	Specifies a solid border
+double - Specifies a double border
+groove - Specifies a 3D grooved border. The effect depends on the border-color value
+ridge - Specifies a 3D ridged border. The effect depends on the border-color value
+inset -	Specifies a 3D inset border. The effect depends on the border-color value
+outset - Specifies a 3D outset border. The effect depends on the border-color value
+initial - Sets this property to its default value. Read about initial
+inherit	- Inherits this property from its parent element. Read about inherit
+
+border-style:dotted solid double dashed;
+top border is dotted
+right border is solid
+bottom border is double
+left border is dashed
+
+border-style:dotted solid double;
+top border is dotted
+right and left borders are solid
+bottom border is double
+
+border-style:dotted solid;
+top and bottom borders are dotted
+right and left borders are solid
+
+border-style:dotted;
+all four borders are dotted
+
+Something about font-family:
+look on w3 schools
+
+CSS styles:
+internal - defined in <style> tags inside file
+external - we make a CSS file and then link it to our HTML file (see session 3 aligning html)
+inline - using style in the tag definition. See same file as above.

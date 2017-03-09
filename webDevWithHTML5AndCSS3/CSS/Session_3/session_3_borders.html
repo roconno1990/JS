@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>CSS Session 3!</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<style type="text/css">
+    /* selector for h1 tag...this changes the h1 tags to match this */
+    h1
+    {
+        font-size: 40px;
+        color: red;
+    }
+
+    /* selector for p tag...this changes the p tags to match this...unless otherwise changed via id or class */
+    p
+    {
+        text-decoration: underline;
+        color: green;
+        font-family: pristina;
+    }
+
+    div
+    {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin-left: 20px;
+    }
+
+    .red
+    {
+        background-color: red;
+        /* defining a border */
+        border: 2px solid;
+    }
+
+    .blue
+    {
+        /* The order follows the same as border-style */
+        border-width: 10px 15px 30px 12px;
+        background-color: blue;
+        /* See notes about this */
+        border-style: dashed groove inset outset;
+        border-color: black green yellow grey;
+    }
+
+    .yellow
+    {
+        background-color: yellow;
+        /* Setting this to be half the width we create a circle! */
+        border-radius: 50px;
+    }
+
+</style>
+
+<body>
+    <div class="red"></div>
+    <div class=blue></div>
+    <div class="yellow"></div>
+    <h1>Google</h1>
+    <p>People use Google as a search engine!</p>
+    <p id="gmail">Gmail is my default account.</p>
+    <p class="testClass">Yahoo, Gmail, <span class="anotherClass">MSN,</span> and Nothing</p>
+</body>
+</html>

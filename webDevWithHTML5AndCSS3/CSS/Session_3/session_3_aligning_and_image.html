@@ -1,0 +1,64 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>CSS Session 3!</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- To get a link between this file and a new CSS file we need to define -->
+    <!--<link rel="stylesheet" href="path to CSS file">-->
+
+</head>
+
+<style type="text/css">
+    /* This is "internal" CSS */
+    /* If we put this into a css file it becomes "external" */
+    h1
+    {
+        font-family: sans-serif;
+    }
+
+    div
+    {
+        width: 500px;
+        height: 400px;
+    }
+
+    .green
+    {
+        background-color: green;
+        font-size: 30px;
+        /* Center of whatever has this class...not the webpage */
+        text-align: justify;
+        padding-left: 10px;
+    }
+
+    /* className tagName */
+    /* Changing our img tags inside of our green class stuff */
+    .green img
+    {
+        margin-top: 200px;
+        border: 15px dashed;
+    }
+
+    body
+    {
+        /* giving a background image to the whole body section */
+        background-image: url(images/happyBunny.jpg);
+        /* Image won't scroll */
+        background-attachment: fixed;
+    }
+</style>
+
+<body>
+    <div class="green">
+        <p><img src="images/button.png"> This is some text This is some text This is some text This is some text</p>
+    </div>
+    <h1>Google</h1>
+    <p class="people">People use Google as a search engine and it's very common and powerful</p>
+    <h3>Gmail</h3>
+    <p id="mail" style="color: red">Gmail is my default account.</p>
+</body>
+</html>
