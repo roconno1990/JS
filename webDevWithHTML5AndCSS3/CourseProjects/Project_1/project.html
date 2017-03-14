@@ -11,6 +11,13 @@
 </head>
 
 <style type="text/css">
+
+    .fixedwidth
+    {
+        width: 1045px;
+        margin: 0 auto;
+    }
+
     body
     {
         background: rgb(92, 92, 92);
@@ -49,6 +56,10 @@
         -op-transition: max-height 0.75s ease 0s;
         /* simple transition */
         transition: max-height 0.75s ease 0s; 
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
     }
 
     /* reference about the colon stuff: https://www.w3schools.com/cssref/css_selectors.asp */
@@ -96,35 +107,54 @@
         display: block;
     }
 
+    /* After hovering they will know they did it right */
+    .info:after
+    {
+        content: " ";
+        background: url(/webDevWithHTML5AndCSS3/CourseProjects/Project_1/images/hover.png) no-repeat right top;
+        width: 30px;
+        height: 40px;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+    }
+
+    .info:hover:after
+    {
+        background-position: right bottom;
+    }
+
 </style>
 
 <body>
-    <!-- Used to divide our site into logical sections -->
-    <section class="action info">
-        <h2>Action Movies</h2>
-        <!-- alt specifies an alternate text for an image -->
-        <img src="/webDevWithHTML5AndCSS3/CourseProjects/Project_1/images/action.jpg" width="290" height="250" alt="action">
-        <p>New York City policeman John McClane (Bruce Willis) is visiting his estranged wife (Bonnie Bedelia) and two daughters on Christmas Eve. He joins her at a holiday party in the headquarters of the Japanese-owned business she works for. But the festivities are interrupted by a group of terrorists who take over the exclusive high-rise, and everyone in it. Very soon McClane realizes that there's no one to save the hostages -- but him.</p>
-    </section>
-
-    <section class="animation info">
-        <h2>Animation Movies</h2>
-        <img src="/webDevWithHTML5AndCSS3/CourseProjects/Project_1/images/animation.jpg" width="290" height="250" alt="animation">
-        <p>Twenty-thousand years ago, Earth is a wondrous, prehistoric world filled with great danger, not the least of which is the beginning of the Ice Age. To avoid a really bad frostbite, the planet's majestic creatures - and a few small, slothful ones - begin migrating south . The story revolves around sub-zero heroes: a woolly mammoth, a saber-toothed tiger, a sloth and a prehistoric combination of a squirrel and rat, known as Scrat.</p>
-    </section>
-
-    <section class="upcoming info">
-        <h2>Upcoming Movies</h2>
-        <img src="/webDevWithHTML5AndCSS3/CourseProjects/Project_1/images/upcoming.jpg" width="290" height="250" alt="upcoming">
-        <ul>
-            <span class="date">1/1 2017</span> <li>Batman</li>
-            <span class="date">1/2 2017</span> <li>Ant Man</li>
-            <span class="date">5/6 2017</span> <li>Ice Age</li>
-            <span class="date">7/8 2017</span> <li>Die Hard</li>
-            <span class="date">7/9 2017</span> <li>Deep Throat 2</li>
-            <span class="date">8/9 2017</span> <li>Mission Possible</li>
-        </ul>
-        <p>The name "film" originates from the fact that photographic film (also called film stock) has historically been the medium for recording and displaying motion pictures. Many other terms exist for an individual motion picture, including picture, picture show, moving picture, photoplay and flick. The most common term in the United States is movie, while in Europe film is preferred. Terms for the field in general include the big screen, the silver screen, the movies and cinema; the latter is commonly used in scholarly texts and critical essays, especially by European writers. In early years, the word sheet was sometimes used instead of screen.</p>
-    </section>
+    <div class="fixedwidth">
+        <!-- Used to divide our site into logical sections -->
+        <section class="action info">
+            <h2>Action Movies</h2>
+            <!-- alt specifies an alternate text for an image -->
+            <img src="/webDevWithHTML5AndCSS3/CourseProjects/Project_1/images/action.jpg" width="290" height="250" alt="action">
+            <p>New York City policeman John McClane (Bruce Willis) is visiting his estranged wife (Bonnie Bedelia) and two daughters on Christmas Eve. He joins her at a holiday party in the headquarters of the Japanese-owned business she works for. But the festivities are interrupted by a group of terrorists who take over the exclusive high-rise, and everyone in it. Very soon McClane realizes that there's no one to save the hostages -- but him.</p>
+        </section>
+    
+        <section class="animation info">
+            <h2>Animation Movies</h2>
+            <img src="/webDevWithHTML5AndCSS3/CourseProjects/Project_1/images/animation.jpg" width="290" height="250" alt="animation">
+            <p>Twenty-thousand years ago, Earth is a wondrous, prehistoric world filled with great danger, not the least of which is the beginning of the Ice Age. To avoid a really bad frostbite, the planet's majestic creatures - and a few small, slothful ones - begin migrating south . The story revolves around sub-zero heroes: a woolly mammoth, a saber-toothed tiger, a sloth and a prehistoric combination of a squirrel and rat, known as Scrat.</p>
+        </section>
+    
+        <section class="upcoming info">
+            <h2>Upcoming Movies</h2>
+            <img src="/webDevWithHTML5AndCSS3/CourseProjects/Project_1/images/upcoming.jpg" width="290" height="250" alt="upcoming">
+            <ul>
+                <span class="date">1/1 2017</span> <li>Batman</li>
+                <span class="date">1/2 2017</span> <li>Ant Man</li>
+                <span class="date">5/6 2017</span> <li>Ice Age</li>
+                <span class="date">7/8 2017</span> <li>Die Hard</li>
+                <span class="date">7/9 2017</span> <li>Deep Throat 2</li>
+                <span class="date">8/9 2017</span> <li>Mission Possible</li>
+            </ul>
+            <p>The name "film" originates from the fact that photographic film (also called film stock) has historically been the medium for recording and displaying motion pictures. Many other terms exist for an individual motion picture, including picture, picture show, moving picture, photoplay and flick. The most common term in the United States is movie, while in Europe film is preferred. Terms for the field in general include the big screen, the silver screen, the movies and cinema; the latter is commonly used in scholarly texts and critical essays, especially by European writers. In early years, the word sheet was sometimes used instead of screen.</p>
+        </section>
+    </div>
 </body>
 </html>
