@@ -54,7 +54,46 @@
     /* reference about the colon stuff: https://www.w3schools.com/cssref/css_selectors.asp */
     .info:hover
     {
-        max-height: 2000px;
+        max-height: 20000px;
+    }
+
+    .info img
+    {
+        display: block;
+        margin: 0 auto 2em;
+        margin-left: 5px;
+    }
+
+    .info h2
+    {
+        /* you can use em or px. */
+        font-size: 1.6em;
+        font-weight: 200;
+        font-family: georgia;
+        padding-left: .5em;
+        line-height: 40px;
+        background: url(/webDevWithHTML5AndCSS3/CourseProjects/Project_1/images/pattern.png);
+        color: rgb(300, 400, 100);
+    }
+
+    .info ul
+    {
+        /* Change our list stuff */
+        list-style: circle;
+        margin: 0 1.2em 1em;
+    }
+
+    .info li
+    {
+        font-size: .8em;
+        margin-bottom: .8em;
+    }
+
+    .info .date
+    {
+        font-weight: bold;
+        color: white;
+        display: block;
     }
 
 </style>
@@ -77,6 +116,14 @@
     <section class="upcoming info">
         <h2>Upcoming Movies</h2>
         <img src="/webDevWithHTML5AndCSS3/CourseProjects/Project_1/images/upcoming.jpg" width="290" height="250" alt="upcoming">
+        <ul>
+            <span class="date">1/1 2017</span> <li>Batman</li>
+            <span class="date">1/2 2017</span> <li>Ant Man</li>
+            <span class="date">5/6 2017</span> <li>Ice Age</li>
+            <span class="date">7/8 2017</span> <li>Die Hard</li>
+            <span class="date">7/9 2017</span> <li>Deep Throat 2</li>
+            <span class="date">8/9 2017</span> <li>Mission Possible</li>
+        </ul>
         <p>The name "film" originates from the fact that photographic film (also called film stock) has historically been the medium for recording and displaying motion pictures. Many other terms exist for an individual motion picture, including picture, picture show, moving picture, photoplay and flick. The most common term in the United States is movie, while in Europe film is preferred. Terms for the field in general include the big screen, the silver screen, the movies and cinema; the latter is commonly used in scholarly texts and critical essays, especially by European writers. In early years, the word sheet was sometimes used instead of screen.</p>
     </section>
 </body>
