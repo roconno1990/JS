@@ -1,0 +1,98 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Contact Us</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/webDevWithHTML5AndCSS3/CourseProjects/Update_Project_2/CSS/contact.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+
+            <div id="logo">
+                <!--<h1>Our Website</h1>-->
+                <!-- Width matches width from the wrap class so it spans the whole thing -->
+                <img src="/webDevWithHTML5AndCSS3/CourseProjects/Update_Project_2/images/bournelegacy.jpg" width="940px" height="">
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <!-- href="#" is empty thing -->
+                    <li><a href="/webDevWithHTML5AndCSS3/CourseProjects/Update_Project_2/home.html">Home</a></li>
+                    <li><a href="/webDevWithHTML5AndCSS3/CourseProjects/Update_Project_2/aboutus.html">About Us</a></li>
+                    <li><a href="/webDevWithHTML5AndCSS3/CourseProjects/Update_Project_2/contact.html" class="selected">Contact Us</a></li>
+                    <li><a href="#">Tell a Friend</a></li>
+                    <li><a href="#">Coming Soon</a></li>
+                    <li><a href="#">Forum</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+
+            <div id="main">
+                <div id="content">
+                    <div id="form" style="background-image: url(/webDevWithHTML5AndCSS3/CourseProjects/Update_Project_2/images/101.png); background-repeat: no-repeat;">
+                         <fieldset>
+                            <legend>Personel Details</legend>
+                            <form action="submit.html" method="get">
+                                <label for="userName">User Name:</label> <input id="userName" type="text" name="userName" placeholder="Enter your User Name">
+                                 <!-- Email type complains if the input value doesn't have an @ -->
+                                 <!-- &nbsp adds an extra space -->
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label for="email">Email Us:</label> <input id="email" type="email" name="email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title= "Please enter valid email address!" placeholder="Please enter your email.">
+                                <br><br>
+                                <!-- Telephone number type -->
+                                <label for="phone">Phone:</label> <input id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter like this: ###-###-####">
+                                &nbsp;&nbsp;
+                                <!--Selection area aka dropdown-->
+                                <select name="country">
+                                    <option value="usa">USA</option>
+                                    <option value="ca">CANADA</option>
+                                    <option value="pak">PAKISTAN</option>
+                                    <option value="ind">INDIA</option>
+                                </select>
+                                <br><br>
+                                <label for="date">Select Your Arrival Date:</label> <input id="date" type="date" name="date" min="2016-12-06">
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <label for="number">Number of Guests:</label> <input id="number" type="number" name="number" min="0" max="15">
+                                <p>Do you Require Meals:</p>
+                                <label for="on">Yes</label> <input id="on" type="radio" name="yesorno" value="yes">
+                                <label for="off">No</label> <input id="off" type="radio" name="yesorno" value="no">
+                                <p>Do you Require a Balcony:</p>
+                                <label for="balcony">Yes</label> <input id="balcony" type="checkbox" name="balcony" value="yes">
+                                <br>
+                                <input style="float: right;" type="image" src="images/button.png" alt="submit">
+                            </form>
+                        </fieldset>
+                    </div>
+                </div>
+                <div id="side">
+                    <h2>Today's Top Movies</h2>
+                    <img src="/webDevWithHTML5AndCSS3/CourseProjects/Update_Project_2/images/V.jpg" width="220px" height="100px" alt="">
+                    <h3>V for Vendetta</h3>
+                    <p>Blah Blah Blah this is V for Vendetta! YEAH! IT'S ABOUT SOMETHING <a href="#">More Info</a></p>
+                    <!-- Clear the float between movies! -->
+                    <div class="clear"></div>
+                    <br>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div id="footer">
+                <!-- &copy adds the copyright sign -->
+                <!-- &trade for trademark sign -->
+                <p><hr>Theme By | Ryan O'Connor | &copy;2017-2020 | All rights reserved
+                   <br>This is just a project site for an online course
+                   <br>&trade;Ryan Stuff<hr></p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
