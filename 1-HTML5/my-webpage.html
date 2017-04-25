@@ -39,5 +39,30 @@
 			<li>Is</li>
 			<li>Ordered</li>
 		</ol>
+		<hr>
+		<h2>Images</h2>
+		<!-- Linking an image from a website is known as "hotlinking" and it's not recommended -->
+		<!-- Change width using the width attribute, use height change height, change alignment using align. Default is in pixals -->
+		<img src="homer.png" width="100">
+		<hr>
+		<h2>Forms</h2>
+		<form>
+		    <!-- The input tag creates a box that allows the user to enter input -->
+			<!-- The default type is text (aka text box) but this can also be a button or any other input -->
+		    <p>Username: <input type="text" placeholder="Default Username"></p>
+			<p>Stay logged in: <input type="checkbox" checked></p>
+			<p>Under 18: <input type="radio" name="age" value="u18"></p>
+			<p>Over 18: <input type="radio" name="age" value="o18"></p>
+			<!-- This is how to add a dropdown option -->
+			<p>Favorite Food:
+			    <select>
+				    <option>Pizza</option>
+					<option selected>Ice cream</option>
+					<option>Sandwiches</option>
+				</select>
+			</p>
+			<!-- Submit button, value changes what the button says -->
+			<p><input type="submit" value="Commit"></p>
+		</form>
 	</body>
 </html>
