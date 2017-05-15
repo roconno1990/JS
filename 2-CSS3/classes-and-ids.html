@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My Webpage - Internal CSS</title>
+
+		<meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- The blocks prefaced with the period are known as "class selectors," and are applied to tags which specify that class -->
+		<!-- The blocks prefaced with the hash are known as the "id selectors," and are applied to tags which specify that id -->
+		<style type="text/css">
+
+			.red {
+			    color: red;
+			}
+
+			.large {
+			    font-size: 200%;
+			}
+
+			.underlined {
+			    text-decoration: underline;
+			}
+
+			#green {
+			    color: green;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>CSS is Cool!</h1>
+		<!-- You can apply multiple classes to one tag like so -->
+		<!-- The difference between classes and ids is that classes can be used more than once -->
+		<p class="red large">This is a sentence.</p>
+		<p class="large">This is another sentance.</p>
+
+		<!-- The general rule of thumb for ids is they should only be used ONCE per page -->
+		<!-- For example each section of a page could have a different id -->
+		<!-- Also, say we want to use CSS within the tag itself...for that we use the <span></span> tag -->
+		<p id="green">This is some more text stuff. <span class="underlined">And this text is other stuff.</span></p>
+	</body>
+</html>
