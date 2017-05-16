@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My Webpage - Positioning</title>
+
+		<meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- relative position means we'll be moving it relative to where it would otherwise be -->
+		<!-- Then to actually move it you use left, right, top, bottom, etc. -->
+		<!-- For example if you move something relative to the left it moves to the right for positive numbers, and left with negative. -->
+		<!-- TO bring things to the front or back use z-index:...highest index wins the front -->
+		<!-- opacity makes things see through or not...so what it sounds like...the max is 1 -->
+
+		<!-- Absolute positioning takes the object out of the flow of the page...so if you just specify absolute then it goes to the top left corner. -->
+
+		<!-- Fixed positioning is also out of the flow of the page. -->
+		<!-- However, the difference between this and absolute is when we scroll the fixed portion will not move -->
+		<style type="text/css">
+
+			.red {
+			    color: red;
+			}
+
+			.large {
+			    font-size: 200%;
+				color: rgb(1,100, 240);
+			}
+
+			.underlined {
+			    text-decoration: underline;
+			}
+
+			#green {
+			    color: green;
+			}
+
+			#first-section {
+			    color: blue;
+				background-color: #0489B1;
+				width: 500px;
+				position: fixed;
+
+				/* position: absolute; */
+
+				/* position: relative; */ 
+				/* left: 100px; */ 
+				/* top: 100px; */
+				/* z-index: 1; */
+			}
+
+			#second-section {
+			    background-color: yellow;
+				width: 500px;
+				height: 1000px;
+
+				/* position: relative; */
+				/* z-index: 2; */
+				/* opacity: 0.5; */
+		</style>
+	</head>
+
+	<body>
+		<div id="first-section">
+		    <h1>CSS is Cool!</h1>
+		    <p>This is a sentence.</p>
+		</div>
+
+		<div id="second-section">
+		    <p class="red">This is another sentance.</p>
+			<p class="large">This is some more text stuff. And this text is other stuff.</p>
+		</div>
+	</body>
+</html>
