@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My Webpage - Padding</title>
+
+		<meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Padding is similar to margin but instead of working outside of the object it works inside it -->
+		<style type="text/css">
+
+			.red {
+			    color: red;
+			}
+
+			.large {
+			    font-size: 200%;
+				color: rgb(1,100, 240);
+			}
+
+			.underlined {
+			    text-decoration: underline;
+			}
+
+			#green {
+			    color: green;
+			}
+
+			#first-section {
+			    color: blue;
+				background-color: #0489B1;
+				width: 500px;
+			}
+
+			#second-section {
+			    background-color: yellow;
+				/* Any padding is on top of this specified width...and probably the same for height if it was specified*/
+				width: 500px;
+
+				/* Much like margin this creates a 5px padding on all 4 sides*/
+				/* padding: 5px; */
+
+				/* Also much like padding you can do as follows, again going clockwise */
+				/* This below padding brings the overall width to 430px in total */
+				padding: 5px 10px 15px 20px;
+			}
+
+			/* Browsers usually have default margins and what not programmed in (see all the white spaces inbetween elements) */
+			/* You can turn those off by doing something like so */
+			body {
+			    margin: 0;
+				padding: 0;
+			}
+
+			/* You'll also notice there's some white space inbetween our objects, we can get rid of this by doing the following: */
+			p {
+			    margin: 0;
+				padding: 0;
+			}
+
+			/* A better way to get rid of these browser pre-sets would be to do a "CSS Reset," which would be better because these browser pre-sets */
+			/* can vary from browser to browser */
+
+		</style>
+	</head>
+
+	<body>
+		<div id="first-section">
+		    <h1>CSS is Cool!</h1>
+		    <p>This is a sentence.</p>
+		</div>
+
+		<div id="second-section">
+		    <p class="red">This is another sentance.</p>
+			<p class="large">This is some more text stuff. And this text is other stuff.</p>
+		</div>
+	</body>
+</html>
