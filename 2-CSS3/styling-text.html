@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My Webpage - Styling Text</title>
+
+		<meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<style type="text/css">
+
+		    .bold {
+			    /* This would be how we can add boldness to text, this is one way */
+				/* font-weight: 900; */
+
+				/* Then this is another way (there are a couple ways) */
+				font-weight: bold;
+			}
+
+			.italic {
+			    /* Can't give a number here, there a couple options but we're just using one */
+			    font-style: italic;
+			}
+
+			.underline {
+			    /* We use this to underline some text, we can also do other things like line through, etc. */
+			    text-decoration: underline;
+			}
+
+			.big {
+			    /* 100% is the default size, so to double it we make it 200% */
+			    font-size: 200%;
+			}
+
+			a {
+			    /* This is to allow all of our links to NOT be underlined. */
+				text-decoration: none;
+			}
+
+			a:hover {
+			    /* This defines a block where if we hover over a link an underline appears */
+			    text-decoration: underline;
+			}
+		</style>
+	</head>
+
+	<body>
+	    <p class="bold">This is some bold text!</p>
+		<!-- We can use the span tag to do stuff within the p tags -->
+		<p class="italic">This is some italic text! <span class="bold">And this is bold and italic!</span> </p>
+
+		<p class="underline">This is some underlined text!</p>
+
+		<a href="">This is a link</a>
+
+		<p class="big">This text is BIG!</p>
+	</body>
+</html>

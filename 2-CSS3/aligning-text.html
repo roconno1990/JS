@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My Webpage - Aligning Text</title>
+
+		<meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<style type="text/css">
+
+		    .rightAlign {
+			    /* This will align to the right of the PARENT element like body, div, etc (what it's contained in) */
+			    text-align: right;
+			}
+
+			.centerAlign {
+			    /* This will align to the center of the PARENT element like body, div, etc (what it's contained in) */
+			    text-align: center;
+			}
+
+			.justified {
+			    /* This fits it all within the area */
+			    text-align: justify;
+			}
+
+			div {
+			    width: 300px;
+				height: 500px;
+				background-color: green;
+			}
+
+		</style>
+	</head>
+
+	<body>
+	    <div>
+		    <p class="rightAlign">This is some right-aligned text!</p>
+			<p class="centerAlign">This is some center-aligned text!</p>
+			<p class="justified">This is some justified text! This is some justified text! This is some justified text! This is some justified text! This is some justified text!This is some justified text!This is some justified text!This is some justified text!This is some justified text!This is some justified text!</p>
+		</div>
+	</body>
+</html>

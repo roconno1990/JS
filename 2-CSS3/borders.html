@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My Webpage - Borders</title>
+
+		<meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Padding is similar to margin but instead of working outside of the object it works inside it -->
+		<style type="text/css">
+		    #red {
+			    background-color: red;
+				/* requires 3 things: width, color, and style*/
+				border: 10px black solid
+			}
+
+			#blue {
+			    background-color: blue;
+				/* We can define borders for different sides of the object */
+				border-style: ridge solid dotted dashed;
+				border-width: 5px;
+				border-top-color: black;
+				border-left-color: yellow;
+				border-right-color: green;
+				border-bottom-color: orange;
+			}
+
+			#green {
+			    background-color: green;
+				/* We can use this to round out edges and such */
+				/* To make our square a circle we need to make this half the width of our square */
+				border-radius: 50px;
+				/* Or if you don't want to specify a size you can do this*/
+				/* border-radius: 50%; */
+			}
+
+			.clearFloat {
+			    clear: both;
+			}
+
+			.square {
+			    width: 100px;
+				height: 100px;
+			    margin: 50px;
+				float: left;
+			}
+
+		</style>
+	</head>
+
+	<body>
+	    <div id="red" class="square"></div>
+		<div id="blue" class="square"></div>
+		<div id= "green" class="square"></div>
+		<div class="clearFloat"></div>
+	</body>
+</html>
