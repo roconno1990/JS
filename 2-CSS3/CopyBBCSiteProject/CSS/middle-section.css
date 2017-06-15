@@ -1,0 +1,97 @@
+#page-container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#middle-article {
+	
+}
+
+#article-summary {
+	color: #5a5a5a;
+	width: 240px;
+	font-size: 15px;
+	float: left;
+	position: relative;
+	bottom: 20px;
+}
+
+#topic-link {
+	color: #BB1919;
+	text-decoration: none;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+#article-summary a:hover {
+	color: #1167A8;
+}
+
+#article-container {
+	float: left;
+	width: 670px;
+	border-right: 1px solid #CCCCCC;
+	padding-right: 10px;
+}
+
+#clock-pic {
+	height: 15px;
+	position: relative;
+	top: 2px;
+}
+
+#comment-pic {
+	height: 23px;
+	position: relative;
+	top: 5px;
+}
+
+#date {
+	padding-right: 4px;
+}
+
+#comment {
+	padding-left: 4px;
+}
+
+#main-article-image {
+	width: 400px;
+	margin-left: 20px;
+	position: relative;
+	bottom: 5px;
+}
+
+#article-hr {
+	border-top: 1px solid #BB1919;
+	width: 45px;
+}
+
+#content-link-1 {
+	font-size: 15px;
+	color: black; 
+	position: relative;
+	bottom: 15px;
+}
+
+#content-link-2 {
+	font-size: 15px;
+	color: black;
+	text-decoration: none;
+	position: relative;
+	bottom: 23px;
+}
+
+#content-link-1 a {
+	text-decoration: none;
+}
+
+#content-link-2 a {
+	text-decoration: none;
+}
+
+.arrow-image {
+	position: relative;
+	top: 3px;
+}
