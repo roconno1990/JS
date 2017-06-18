@@ -1,0 +1,64 @@
+#watch-listen {
+    position: relative;
+	top: -30px;
+	width: 300px;
+	float: right;
+}
+
+.watch-listen-topic {
+	color: #BB1919;
+	text-decoration: none;
+	border-left: 1px solid #CCCCCC;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.side-date {
+	padding-right: 4px;
+	color: #5a5a5a;
+}
+
+.side-link {
+	font-size: 13px;
+	position: relative;
+	bottom: 12px;
+}
+
+.side-article {
+	float: right;
+	width: 190px;
+	position: relative;
+	top: -18px;
+}
+
+.bottom-padding {
+	position: relative;
+	bottom: 10px;
+}
+
+#watch-listen-links-1 {
+	position: relative;
+	bottom: 20px;
+}
+
+.watch-listen-links {
+	position: relative;
+	bottom: 30px;
+}
+
+.watch-listen-link {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.watch-listen-link:hover {
+	color: #1167A8;
+}
+
+.side-images {
+	float: left;
+	margin-right: 10px;
+	width: 100px;
+}
