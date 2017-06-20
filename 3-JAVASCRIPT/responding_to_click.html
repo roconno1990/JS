@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+        <title>Javascript - Responding to Click</title>
+
+		<meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	</head>
+
+	<body>
+
+	    <p id="text">Hello World!</p>
+		<button id="button">Change Text</button>
+
+		<!-- Internal javascript -->
+		<script type="text/javascript">
+
+		    //document.getElementById("text").innerHTML = "Hello!";
+			document.getElementById("button").onclick = function() {
+			    //alert("Button Clicked!");
+				document.getElementById("text").innerHTML = "Hello!";
+			};
+
+		</script>
+	</body>
+</html>
